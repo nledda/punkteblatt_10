@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+// main class
+public class A1_main {
+
+	public static void main(String[] args) {
+    
+    }
+
+    public static TwoLists seperateLargeSmall(int n, ArrayList<Integer> b) {
+        ArrayList<Integer> = 
+        
+    }
+}   
