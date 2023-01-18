@@ -1,0 +1,28 @@
+public class Patients {
+	private String name;
+	private int prio;
+	
+	public Person(String name, int prio) {
+		this.name = name;
+		this.prio = prio;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getPrio() {
+		return prio;
+	}
+
+	public void setPrio(int prio) {
+		this.prio = prio;
+	}
+	
+	
+
+}

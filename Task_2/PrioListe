@@ -1,0 +1,39 @@
+import java.util.ArrayList;
+
+public class PrioListe {
+	private ArrayList<Patients> myList;
+	private int counter; 
+	
+	public Patients() {
+		myList = new ArrayList<Patients>();
+	}
+	
+	public void addPatients(Patients p) {
+		if(counter != 0) {
+			for(int j = 0; j<= myList.size(); j++) {
+				if(p.getPrio() < myList.get(j).getPrio()) {
+					myList.add(j, p);
+				}
+			}
+		}
+
+		myList.add(p);
+	}
+		
+	
+	public Patients getNextPatients() {
+		// Patients Next = myList.get(0);
+		counter--;
+		
+		return myList.remove(0);	
+		
+		// return Next;
+	}
+	
+	public int getPosition(Patients p) {
+		return myList.indexOf(p);
+	}
+	
+	
+
+}
