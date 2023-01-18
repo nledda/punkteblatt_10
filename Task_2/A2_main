@@ -1,0 +1,27 @@
+
+
+public class A2_main {
+
+	public static void main(String[] args) {
+		Person p1 = new Person("Peter ", 7);
+		Person p2 = new Person("Hans " , 3);
+		Person p3 = new Person("Robert ", 5);
+		Person p4 = new Person("Manuel ", 2);
+		Person p5 = new Person("Till ", 1);
+		
+		Patients Patienten = new Patients(); 
+		Patienten.addPerson(p5);
+		Patienten.addPerson(p4);
+		Patienten.addPerson(p3);
+		Patienten.addPerson(p2);
+		Patienten.addPerson(p1);
+		
+		System.out.println(Patienten.getNextPerson().getName() + Patienten.getNextPerson().getPrio());
+		System.out.println(Patienten.getNextPerson().getName() + Patienten.getNextPerson().getPrio());
+		System.out.println(Patienten.getNextPerson().getName() + Patienten.getNextPerson().getPrio());
+		System.out.println(Patienten.getNextPerson().getName() + Patienten.getNextPerson().getPrio());
+		System.out.println(Patienten.getNextPerson().getName() + Patienten.getNextPerson().getPrio());
+		
+	}
+
+}
