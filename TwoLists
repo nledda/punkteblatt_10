@@ -5,6 +5,7 @@ public class TwoLists {
     private static ArrayList<Integer> smallerThan = new ArrayList<Integer>();
     private static ArrayList<Integer> biggerThan = new ArrayList<Integer>();;
   
+    
     public TwoLists(ArrayList<Integer> a, ArrayList<Integer> b){
 
         for(int i=0; i < a.size(); i++){
@@ -16,4 +17,14 @@ public class TwoLists {
         }
 
     }
+
+    public ArrayList<Integer> getSmallerThan() {
+        return smallerThan;
+    }
+
+    public ArrayList<Integer> getBiggerThan() {
+        return biggerThan;
+    }
+ 
+    
 }

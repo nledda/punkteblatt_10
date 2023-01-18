@@ -7,7 +7,26 @@ public class A1_main {
     }
 
     public static TwoLists seperateLargeSmall(int n, ArrayList<Integer> b) {
-        ArrayList<Integer> = 
+        ArrayList<Integer> a = new ArrayList<Integer>();
+
+        // add all elements smaller than n to the created ArrayList a
+        // don't remove the elements from the list b 
+        // because it would make the for-loop more complicated
+        for(int i = 0; i < b.size(); i++){
+            if(b.get(i) < n){
+                a.add(b.get(i)); 
+            }
+        }
+
+        // remove all the elements smaller than n from ArrayList b
+        for(int i = 0; i < b.size(); i++){
+            if(b.get(i) < n){
+                b.remove(i); 
+            }
+        }
         
+
+        TwoLists c = new TwoLists(a, b);
+        return c;        
     }
 }   
