@@ -1,0 +1,4 @@
+
+public abstract class Lebensmittel extends Artikel {
+	boolean beliebt;
+}
