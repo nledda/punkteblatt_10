@@ -1,0 +1,9 @@
+
+public abstract class Artikel {
+	int rabMenge;
+	int haushalt;
+	
+	// public oder private davor
+	abstract int mengenRabatt();
+	abstract boolean warnung();
+}

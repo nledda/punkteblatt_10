@@ -1,0 +1,19 @@
+
+public class Mehl extends BLebensmittel {
+
+	public Mehl(int a, int r, int b) {
+			bGrad = b;
+			rabMenge = r;
+			anzahl = a;
+			haushalt = 15;
+	}
+		
+		private int mengenRabatt(){
+			if(rabMenge <= anzahl) {
+				return 5;
+			}else {
+				return 0;
+			}
+		}
+
+}

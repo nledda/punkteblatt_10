@@ -1,0 +1,30 @@
+
+public abstract class BLebensmittel extends Lebensmittel{
+	int bGrad;
+	int anzahl;
+	
+	public BLebensmittel(int bGrad) {
+		// TODO Auto-generated constructor stub
+		beliebt = true;
+		this.bGrad=bGrad;
+	}
+
+	// public
+	boolean warnung() {
+		if(haushalt < anzahl) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public int getAnzahl() {
+		return anzahl;
+	}
+
+	public void setAnzahl(int anzahl) {
+		this.anzahl = anzahl;
+	}
+	
+	
+}
